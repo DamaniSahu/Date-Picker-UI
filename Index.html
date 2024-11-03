@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatePicker UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #box{
+        height: 100vh;
+        background-color: greenyellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #top{
+        width: 21%;
+        display: flex;
+    }
+    #top input{
+        width: 83%;
+        border: 2px solid black;
+        color: black;
+        font-size: 20px;
+        padding: 0px 0px 0px 15px;
+    }
+    ::placeholder{
+        color: black;
+    }
+    button{
+        padding: 6px;
+        font-size: 5px;
+        border-width: 2px 2px 2px 0px;
+        border-color: black;
+        border-style: solid;
+        background-color: white;
+    }
+    
+    #bottom{
+        background-color: white;
+        border: 2px solid black;
+        margin-top: 2px;
+        width: 21%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header{
+        width: 100%;
+        font-size: px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-width: 0px 0px 2px 0px;
+        border-style: solid;
+        border-color: black;
+        background-color: rgb(252, 204, 188);
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 18px;
+    }
+    span{
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    i{
+        font-size: 35px;
+    }
+    #sectionTable,#sectionTable tr,#sectionTable td{
+        border: 1px solid black;
+        text-align: center;
+        padding: 2PX;
+        border-collapse: collapse;
+        padding: 10.4px;
+    }
+    #headerTable td{
+        padding: 12px;
+    }
+    
+</style>
+<body>
+    
+    <div id="box">
+        <div id="top">
+            <input type="text" placeholder="dd/mm/yyyy">
+            <button>
+                <i class="fa fa-calendar"></i>
+            </button>
+
+        </div>
+        <div id="bottom">
+            <header>
+                <p><i class="fa fa-caret-left" aria-hidden="true" left></i>
+                <span>December 2022</span>
+                <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                <table id="headerTable">
+                    <tr>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>S</td>
+                    </tr>
+                </table>
+            </header>
+            <section>
+                <table id="sectionTable">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
